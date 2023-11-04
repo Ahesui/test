@@ -1,0 +1,37 @@
+{
+	"contracts": {
+		"BottomShot": "./contracts/BottomShot.cdc",
+		"NonFungibleToken": "./contracts/NonFungibleToken.cdc",
+		"CatMoji": "./contracts/CatMoji.cdc"
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "90992ee0025b8d0b8c1af89641bb9e23271a481eb2462936389fb1ed34228d13"
+		},
+		"testnet-account": {
+			"address": "0xd910dbbd5342b5a7",
+			"key": "fff431f680776ee899a894c55d23c129f1307e886c718a0499656e1dba6d9f01"
+		}
+	},
+	"deployments": {
+		"emulator": {
+			"emulator-account": [
+				"BottomShot",
+				"NonFungibleToken"
+			]
+		},
+		"testnet": {
+			"testnet-account": [
+				"BottomShot",
+				"CatMoji"
+			]
+		}
+	}
+}
+
